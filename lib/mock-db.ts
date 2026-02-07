@@ -12,7 +12,7 @@ export async function getLoanApp(id: string): Promise<LoanApp> {
     return {
         id, 
         applicant: { 
-        applicantName: "John Doe",
+        applicantName: "Sarah Mitchell",
         annualIncome: 95000, 
         employmentStatus: "full-time", 
         creditScore: 70, 
