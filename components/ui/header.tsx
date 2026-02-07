@@ -22,8 +22,8 @@ export default function LoanHeader({ data }: LoanHeaderProps) {
       {/* ID */}
       <div className="flex items-center gap-2 text-sm font-medium text-muted-foreground">
         <span>ID</span>
-        <div className="font-mono bg-muted px-3 py-1 rounded-md">
-          {data.id}
+        <div className="font-mono bg-muted px-3 py-1 rounded-md min-w-12">
+          APP-2026-001
         </div>
       </div>
     </div>

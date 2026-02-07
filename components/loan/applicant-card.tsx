@@ -5,6 +5,7 @@ interface ApplicantCardProps {
   data: LoanApp;
 }
 
+// Applicant card to display the applicant details 
 export function ApplicantCard({ data }: ApplicantCardProps) {
   return (
     <Card>
