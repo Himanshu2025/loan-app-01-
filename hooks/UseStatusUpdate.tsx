@@ -11,7 +11,7 @@ import { LoanApp } from "@/types/loan";
 export function useStatusUpdate(status: LoanApp["status"], onStatusChange?: (newStatus: LoanApp["status"]) => void) {
   const [loading, setLoading] = useState(false);
 
-  // Workflow rules (DRY)
+  // Workflow rules
   const nextActions: Record<LoanApp["status"], LoanApp["status"][]> = {
     pending: ["under-review"],
     "under-review": ["approved", "rejected"],
@@ -38,9 +38,17 @@ export function useStatusUpdate(status: LoanApp["status"], onStatusChange?: (new
 
     try {
       // Mock API (real: fetch)
-      await new Promise(r => setTimeout(r, 300));
+      await new Promise(p => setTimeout(p, 300));
 
-      toast.success("Status updated successfully");
+      // custom toast messages for different outcomes
+      if (newStatus === "under-review") {
+        toast.success("Status updated to under review"); 
+      } else if ( newStatus === "approved"){
+          toast.success("Application approved"); 
+      } else if ( newStatus === "rejected"){
+          toast.success("Application rejected")
+      }
+
       return true;
     } catch {
       // Case 4: Using try,catch and Revert + error
