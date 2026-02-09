@@ -6,7 +6,7 @@ It displays applicant and loan details, allows status updates through a strict w
 https://loan-app-01.vercel.app/loan/APP-2026-003
 
 # Overall Summary:
-After several iterations, I have arrived at this final solution, after many changes, refeering some blogs about good UX and tried to keep the code simple. I have relied on KISS and DRY principles heavily. I have used dynamic routing to give it a real flavour. 
+After several iterations, I have arrived at this final solution, after many changes, referring some blogs about good UX, I have tried to keep the code simple. I have relied on KISS and DRY principles heavily. I have used dynamic routing to give it a real flavour. 
 
 # Progress log
 Refer this document where I have tracked my progress and the process of how I arrived at the final solution: 
