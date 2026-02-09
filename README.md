@@ -50,7 +50,12 @@ Home page (/) shows a link to the Loan Application Detail View:
 http://localhost:3000/loan/APP-2026-003
 
 
+# Workflow
+
+pending > under review > approved/rejected 
+\
 # Directory structure:
+```bash
 └── himanshu2025-loan-app-01-/
     ├── README.md
     ├── components.json
@@ -88,3 +93,4 @@ http://localhost:3000/loan/APP-2026-003
     │   └── utils.ts
     └── types/
         └── loan.ts
+```
