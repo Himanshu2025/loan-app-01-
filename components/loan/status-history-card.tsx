@@ -11,11 +11,13 @@ import {
 interface StatusHistoryCardProps {
     history: LoanApp["statusHistory"]; 
 }
-// status history card 
+
+// status history card to display the status change logs
 export function StatusHistoryCard({history}: StatusHistoryCardProps){
     
-  if(!history || history.length === 0) return null; 
+  if(!history || history.length === 0) return null;
 
+  // splitting date and time to display the timestamp
   function formatTime(iso: string): string {
     const date = new Date(iso);
     const datePart = date.toLocaleDateString("en-AU");
@@ -31,7 +33,7 @@ export function StatusHistoryCard({history}: StatusHistoryCardProps){
       </CardHeader>
 
       <CardContent className="space-y-2 text-sm">
-        {/* Adding each status history entry one below the other*/}
+        {/* Adding each status history entry one below the other with notes + timestamp */}
         {history.map((entry, index) => (
           <div
             key={index}
