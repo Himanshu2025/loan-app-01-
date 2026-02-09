@@ -18,20 +18,20 @@ Data: In‑memory mock-db.ts returning a single LoanApp object
 bash
 # 1. Install deps
 pnpm install
-# or
+or
 npm install
-# or
+or
 yarn
-# or 
+or 
 bun install 
 
 # 2. Run dev server
 pnpm dev
-# or
+ or
 npm run dev
-# or
+or
 yarn dev
-# or 
+or 
 bun run dev 
 
 # 3. Open in browser
@@ -40,27 +40,4 @@ Home page (/) shows a link to the Loan Application Detail View:
 
 http://localhost:3000/loan/APP-4
 
-# Project structure
-app/
-  page.tsx                    # Simple landing page with link to loan detail
-  loan/
-    [id]/
-      page.tsx                # Server component: await params, fetch mock loan
-      loan-dashboard.tsx      # Client component: main dashboard UI + state
-components/
-  loan/
-    applicant-card.tsx        # Applicant details card
-    loan-card.tsx             # Loan details card
-    status-buttons.tsx        # Status actions, uses useStatusUpdate hook
-    status-history-card.tsx   # Status History list
-  ui/
-    header.tsx                # Loan header (title, ID, top-right status badge)
-    status-badge.tsx          # Reusable status pill
-    button.tsx, card.tsx, ... # shadcn/ui primitives
-hooks/
-  useStatusUpdate.ts          # Status workflow + validation + toasts
-lib/
-  mock-db.ts                  # getLoanApp(id): returns mock LoanApp
-types/
-  loan.ts                     # LoanApp + statusHistory types
 

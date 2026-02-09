@@ -11,6 +11,7 @@ import { StatusHistoryCard } from "@/components/loan/status-history-card";
 interface Props {
     initialData: LoanApp; 
 }
+
 // LoanDashboard function which contains all the components 
 export default function LoanDashboard({initialData}: Props){
   const [loanData, setLoanData] = useState<LoanApp>(initialData);
