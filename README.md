@@ -1,10 +1,12 @@
 ## Responsive Loan application 
 
- 
-
-Loan Application Detail View
 It displays applicant and loan details, allows status updates through a strict workflow, and records a status history with timestamps and notes.
 ​
+Refer this document where I have tracked my progress and the process of how I arrived at the final solution: 
+https://docs.google.com/document/d/1nDTG0CSrJ0Gedr2Hzal_KtW6XVzp-gmPB0NiANKJF8E/edit?usp=sharing
+# visit the live link here: 
+https://loan-app-01.vercel.app/loan/APP-2026-003
+
 # Tech Stack
 Framework: Next.js (App Router, TypeScript)
 
@@ -38,6 +40,6 @@ bun run dev
 http://localhost:3000
 Home page (/) shows a link to the Loan Application Detail View:
 
-http://localhost:3000/loan/APP-4
+http://localhost:3000/loan/APP-2026-003
 
 

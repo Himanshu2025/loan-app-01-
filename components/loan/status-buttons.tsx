@@ -27,7 +27,7 @@ export function StatusButtons({ status, onStatusChange }: StatusButtonsProps) {
   // Helper for friendly labels
   const labelFor = (action: string) => {
     if (action === "under-review") return "Move to Under Review";
-    if (action === "approved") return "Accept";
+    if (action === "approved") return "Approve";
     if (action === "rejected") return "Reject";
     return action;
   };
