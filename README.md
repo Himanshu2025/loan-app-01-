@@ -43,7 +43,7 @@ or
 bun run dev 
 ```
 
-# 3. Open in browser
+# Open in browser
 http://localhost:3000
 Home page (/) shows a link to the Loan Application Detail View:
 
