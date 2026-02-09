@@ -16,7 +16,7 @@ export async function getLoanApp(id: string): Promise<LoanApp> {
         annualIncome: 95000, 
         employmentStatus: "full-time", 
         creditScore: 70, 
-        applicationDate: "05-02-2026" 
+        applicationDate: "06-02-2026" 
         }, 
         loan: {
             loanAmount: 300000, 
