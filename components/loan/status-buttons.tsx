@@ -36,7 +36,7 @@ export function StatusButtons({ status, onStatusChange }: StatusButtonsProps) {
     <div className="p-4 bg-card border rounded-md shadow-sm max-w-2xl">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <span className="text-sm text-muted-foreground">Status:</span>
+          <span className="text-sm text-muted-foreground">Current Status:</span>
           <StatusBadge status={status} />
         </div>
 

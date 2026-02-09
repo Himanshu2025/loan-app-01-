@@ -1,5 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 
+// Custom colors for different status options 
 const colors = {
   pending: "bg-yellow-500 text-white",
   approved: "bg-green-500 text-white", 
